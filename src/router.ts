@@ -19,6 +19,8 @@ if (!isLocal) {
   page.base("/chatrooms-frontend");
 }
 
+// page.base("/chatrooms-frontend");
+
 export function goTo(route: string) {
   page(route);
 }

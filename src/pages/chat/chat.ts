@@ -11,8 +11,9 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
-const cs = state.getState();
 export function chat() {
+  const cs = state.getState();
+  console.log(state.getState());
   const divEl: HTMLDivElement = document.createElement("div");
   divEl.innerHTML = `
    <header-el></header-el>
