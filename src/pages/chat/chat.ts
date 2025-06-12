@@ -11,13 +11,14 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
-
+const cs = state.getState();
 export function chat() {
   const divEl: HTMLDivElement = document.createElement("div");
   divEl.innerHTML = `
    <header-el></header-el>
   <main class="main">
   <h2>Chat</h2>
+  <p><strong>Room ID:</strong> ${cs.roomId}</p>
   <ul class="container-messages"></ul>
   <form class="form">
       <reusable-input

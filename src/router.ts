@@ -16,7 +16,7 @@ const isLocal =
 
 // Solo aplica el base en producción (GitHub Pages)
 if (!isLocal) {
-  page.base("/chatrooms-frontend/");
+  page.base("/chatrooms-frontend");
 }
 
 export function goTo(route: string) {
